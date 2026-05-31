@@ -31,6 +31,7 @@
         <a href="#portfolio" class="nav-item">Case Studies</a>
         <a href="#resume" class="nav-item">Resume</a>
         <a href="#competencies" class="nav-item">Competencies</a>
+        <a href="#interests" class="nav-item">Publications</a>
         <a href="#contact" class="nav-item contact-btn">Contact</a>
       </nav>
       <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
@@ -57,42 +58,44 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="architecture-grid">
-          <!-- Custom SVG grid representing Design Tokens/Architecture -->
-          <svg viewBox="0 0 400 400" width="100%" height="100%" class="grid-svg">
-            <defs>
-              <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="var(--gold-light)" />
-                <stop offset="100%" stop-color="var(--gold)" />
-              </linearGradient>
-              <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#5B8DEF" />
-                <stop offset="100%" stop-color="#3b82f6" />
-              </linearGradient>
-            </defs>
-            <!-- Background grids -->
-            <path d="M 50,0 L 50,400 M 150,0 L 150,400 M 250,0 L 250,400 M 350,0 L 350,400" stroke="var(--border)" stroke-width="1" />
-            <path d="M 0,50 L 400,50 M 0,150 L 400,150 M 0,250 L 400,250 M 0,350 L 400,350" stroke="var(--border)" stroke-width="1" />
-            
-            <!-- Enterprise Design System Blocks -->
-            <rect x="50" y="50" width="100" height="100" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="1.5" class="svg-node" />
-            <rect x="250" y="50" width="100" height="100" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="1.5" class="svg-node" />
-            <rect x="150" y="250" width="100" height="100" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="1.5" class="svg-node" />
-            
-            <!-- Lines representing API contracts -->
-            <path d="M 100,150 L 100,200 L 200,200 L 200,250" fill="none" stroke="url(#gold-grad)" stroke-width="2" stroke-dasharray="4,4" />
-            <path d="M 300,150 L 300,200 L 200,200" fill="none" stroke="url(#blue-grad)" stroke-width="2" />
-            
-            <!-- Nodes -->
-            <circle cx="100" cy="150" r="6" fill="var(--gold)" />
-            <circle cx="300" cy="150" r="6" fill="#3b82f6" />
-            <circle cx="200" cy="250" r="8" fill="var(--emerald)" />
-            
-            <!-- Text representations -->
-            <text x="100" y="105" text-anchor="middle" fill="var(--text-primary)" font-family="'JetBrains Mono', monospace" font-size="10">DESIGN TOKENS</text>
-            <text x="300" y="105" text-anchor="middle" fill="var(--text-primary)" font-family="'JetBrains Mono', monospace" font-size="10">COMPONENT API</text>
-            <text x="200" y="305" text-anchor="middle" fill="var(--text-primary)" font-family="'JetBrains Mono', monospace" font-size="10">ACCESSIBLE DOM</text>
-          </svg>
+        <div class="hero-visual">
+          <div class="architecture-grid">
+            <!-- Custom SVG grid representing Design Tokens/Architecture -->
+            <svg viewBox="0 0 400 400" width="100%" height="100%" class="grid-svg">
+              <defs>
+                <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="var(--gold-light)" />
+                  <stop offset="100%" stop-color="var(--gold)" />
+                </linearGradient>
+                <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#5B8DEF" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+              </defs>
+              <!-- Background grids -->
+              <path d="M 50,0 L 50,400 M 150,0 L 150,400 M 250,0 L 250,400 M 350,0 L 350,400" stroke="var(--border)" stroke-width="1" />
+              <path d="M 0,50 L 400,50 M 0,150 L 400,150 M 0,250 L 400,250 M 0,350 L 400,350" stroke="var(--border)" stroke-width="1" />
+              
+              <!-- Enterprise Design System Blocks -->
+              <rect x="50" y="50" width="100" height="100" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="1.5" class="svg-node" />
+              <rect x="250" y="50" width="100" height="100" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="1.5" class="svg-node" />
+              <rect x="150" y="250" width="100" height="100" rx="12" fill="var(--card-bg)" stroke="var(--border)" stroke-width="1.5" class="svg-node" />
+              
+              <!-- Lines representing API contracts -->
+              <path d="M 100,150 L 100,200 L 200,200 L 200,250" fill="none" stroke="url(#gold-grad)" stroke-width="2" stroke-dasharray="4,4" />
+              <path d="M 300,150 L 300,200 L 200,200" fill="none" stroke="url(#blue-grad)" stroke-width="2" />
+              
+              <!-- Nodes -->
+              <circle cx="100" cy="150" r="6" fill="var(--gold)" />
+              <circle cx="300" cy="150" r="6" fill="#3b82f6" />
+              <circle cx="200" cy="250" r="8" fill="var(--emerald)" />
+              
+              <!-- Text representations -->
+              <text x="100" y="105" text-anchor="middle" fill="var(--text-primary)" font-family="'JetBrains Mono', monospace" font-size="10">DESIGN TOKENS</text>
+              <text x="300" y="105" text-anchor="middle" fill="var(--text-primary)" font-family="'JetBrains Mono', monospace" font-size="10">COMPONENT API</text>
+              <text x="200" y="305" text-anchor="middle" fill="var(--text-primary)" font-family="'JetBrains Mono', monospace" font-size="10">ACCESSIBLE DOM</text>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -1037,6 +1040,49 @@
           <div class="comp-item">
             <span class="comp-name">Design Operations &amp; Team Governance</span>
             <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies, Interests & Creative Publications Section -->
+  <section id="interests" class="interests-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2>Hobbies &amp; Creative Publications</h2>
+        <p class="section-desc">My published literary works and creative writing ventures beyond the technology space.</p>
+      </div>
+
+      <div class="interests-grid">
+        <!-- Book 1: Flames of the Moon -->
+        <div class="interest-card">
+          <div class="book-cover-container">
+            <img src="flames_of_the_moon.jpg" alt="Flames of the Moon Poetry Book Cover" class="book-cover">
+          </div>
+          <div class="book-info">
+            <span class="book-date">PUBLISHED MARCH 20, 2020</span>
+            <h3>Flames of the Moon</h3>
+            <p class="book-type">Poetry Collection &amp; Emotional Narrative</p>
+            <p class="book-desc">
+              A highly celebrated love poetry compilation exploring themes of love, pain, and separation. Sold over 1,300+ physical copies worldwide, showcasing my passion for creative storytelling, human-centered narratives, and emotional typography.
+            </p>
+          </div>
+        </div>
+
+        <!-- Book 2: Fan of Chiranjeevi -->
+        <div class="interest-card">
+          <div class="book-cover-container">
+            <img src="fan_of_chiranjeevi.jpg" alt="Fan of Chiranjeevi Book Cover" class="book-cover">
+          </div>
+          <div class="book-info">
+            <span class="book-date">VOLUME 1</span>
+            <h3>Fan of Chiranjeevi</h3>
+            <p class="book-type">Fiction Novel &amp; Cultural Fandom Tribute</p>
+            <p class="book-desc">
+              A tribute fiction novel celebrating cinematic culture, fandom dynamics, and the legacy of Megastar Chiranjeevi. Explores storytelling through the lens of a fan universe, bridging media culture with human emotions.
+            </p>
           </div>
         </div>
       </div>

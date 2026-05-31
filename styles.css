@@ -951,7 +951,90 @@ section {
   border-radius: 100px;
 }
 
-/* 9. Contact Section */
+/* 9. Hobbies & Creative Publications Section */
+.interests-section {
+  position: relative;
+  background-color: var(--bg-secondary);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.interest-card {
+  background-color: rgba(7, 9, 14, 0.4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  display: flex;
+  gap: 24px;
+  transition: var(--transition);
+}
+
+.interest-card:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+  background-color: var(--bg-elevated);
+}
+
+.book-cover-container {
+  flex-shrink: 0;
+  width: 140px;
+}
+
+.book-cover {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+  transition: var(--transition);
+}
+
+.interest-card:hover .book-cover {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8);
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-date {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.book-info h3 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.book-type {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.book-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* 10. Contact Section */
 .contact-container {
   display: flex;
   align-items: center;
@@ -1005,7 +1088,7 @@ section {
   text-decoration: none;
 }
 
-/* 10. Footer Section */
+/* 11. Footer Section */
 .footer {
   padding: 40px 0;
   background-color: #040507;
@@ -1037,7 +1120,7 @@ section {
   color: var(--gold);
 }
 
-/* 11. Responsive Breakpoints */
+/* 12. Responsive Breakpoints */
 @media (max-width: 960px) {
   section { padding: 70px 0; }
   
@@ -1068,6 +1151,12 @@ section {
   
   .competencies-grid { grid-template-columns: 1fr; }
   
+  .interests-grid { grid-template-columns: 1fr; }
+  
+  .interest-card { flex-direction: column; align-items: center; text-align: center; }
+  
+  .book-cover-container { width: 160px; }
+  
   .contact-details-grid { grid-template-columns: 1fr; gap: 30px; }
 }
 
@@ -1097,10 +1186,9 @@ section {
 }
 
 /* ==========================================
-   12. Print Layout Optimization (Strict @media print)
+   13. Print Layout Optimization (Strict @media print)
    ========================================== */
 @media print {
-  /* Hide all elements that shouldn't appear on paper */
   body {
     background: #fff !important;
     color: #000 !important;
@@ -1114,6 +1202,7 @@ section {
   .about-section,
   .portfolio-section,
   .competencies-section,
+  .interests-section,
   .contact-section,
   .footer,
   .blur-orb,
@@ -1172,7 +1261,6 @@ section {
     color: #333 !important;
   }
   
-  /* Ensure page breaks operate cleanly */
   .timeline-item {
     page-break-inside: avoid !important;
     margin-bottom: 15px !important;
