@@ -33,7 +33,7 @@ function initMobileNav() {
 }
 
 /**
- * 2. Dynamic Case Study Filtering
+ * 2. Dynamic Case Study Filtering (Supports Comma-Separated Multi-Categories)
  */
 function initCaseFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -49,9 +49,10 @@ function initCaseFilters() {
         const filterValue = btn.getAttribute('data-filter');
 
         projectCards.forEach(card => {
-          const category = card.getAttribute('data-category');
+          const categoryAttr = card.getAttribute('data-category') || '';
+          const categories = categoryAttr.split(',').map(c => c.trim());
           
-          if (filterValue === 'all' || category === filterValue) {
+          if (filterValue === 'all' || categories.includes(filterValue)) {
             card.style.display = 'block';
             setTimeout(() => {
               card.style.opacity = '1';
@@ -87,8 +88,7 @@ function initAccordions() {
           body.style.maxHeight = null;
           panel.classList.remove('open');
         } else {
-          // Close other accordions in the same list if desired
-          // For a premium portfolio, we let them open multiple, but we set scroll alignment
+          // Open accordion and set dynamic scrollHeight
           panel.classList.add('open');
           body.style.maxHeight = body.scrollHeight + "px";
           
@@ -108,7 +108,6 @@ function initAccordions() {
  * 4. Premium Scroll Reveal Animations
  */
 function initScrollAnimations() {
-  // Simple intersection observer to trigger section reveals
   const revealElements = document.querySelectorAll('section, .fact-card, .project-card');
   
   if ('IntersectionObserver' in window) {
