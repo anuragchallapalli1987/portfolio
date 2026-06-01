@@ -333,17 +333,28 @@ section {
 .mobile-nav-toggle {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 6px;
   background: none;
   border: none;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.mobile-nav-toggle:hover {
+  background-color: var(--bg-elevated);
 }
 
 .mobile-nav-toggle span {
-  width: 24px;
+  width: 20px;
   height: 2px;
   background-color: var(--text-primary);
   transition: var(--transition);
+  display: block;
 }
 
 /* 5. Section Specific Layouts */
@@ -1233,6 +1244,34 @@ section {
   
   .nav-menu.open {
     transform: translateY(0);
+  }
+  
+  /* Responsive UX Fixes for Mobile Viewports */
+  .details-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  
+  .project-card {
+    padding: 24px 20px !important;
+  }
+  
+  .project-badge {
+    position: static !important;
+    display: inline-block !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .mobile-nav-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .mobile-nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-nav-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
