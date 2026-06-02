@@ -14,14 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const caseStudies = [
   {
-    category: 'systems',
-    badge: 'Design System',
-    badgeClass: 'badge-red',
-    client: 'PROVIDENCE GLOBAL CENTER',
-    timeline: '2023 - Present',
-    title: 'Multi-Brand Enterprise Design System Architecture',
-    role: 'Principal UX Architect',
-    impact: '60% fewer inconsistencies, 30% faster handoff',
+    category: 'systems', badge: 'Design System', badgeClass: 'badge-red', client: 'PROVIDENCE GLOBAL CENTER', timeline: '2023 - Present', title: 'Multi-Brand Enterprise Design System Architecture', role: 'Principal UX Architect', impact: '60% fewer inconsistencies, 30% faster handoff',
     summary: 'A systems-level redesign of fragmented healthcare product interfaces into a governed, tokenized, multi-brand design architecture.',
     problem: 'More than 10 healthcare surfaces were using disconnected UI patterns, one-off CSS variables, inconsistent accessibility behavior, and duplicated engineering effort.',
     research: 'Audited product screens, component inventories, engineering repositories, accessibility defects, and stakeholder handoff pain points across patient, provider, and internal operations platforms.',
@@ -33,14 +26,7 @@ const caseStudies = [
     metrics: ['60% reduction in UI inconsistency', '30% faster design-to-development handoff', '40% faster onboarding for engineers', 'Reusable governance model for 10+ platforms']
   },
   {
-    category: 'transformation',
-    badge: 'Healthcare UX',
-    badgeClass: 'badge-teal',
-    client: 'PROVIDENCE / TRUSANA',
-    timeline: '2022 - 2023',
-    title: 'Trusana Mental Health Enrollment Platform',
-    role: 'Lead UX Engineer',
-    impact: '25% conversion gain, ET Healthcare Award',
+    category: 'transformation', badge: 'Healthcare UX', badgeClass: 'badge-teal', client: 'PROVIDENCE / TRUSANA', timeline: '2022 - 2023', title: 'Trusana Mental Health Enrollment Platform', role: 'Lead UX Engineer', impact: '25% conversion gain, ET Healthcare Award',
     summary: 'An end-to-end patient enrollment redesign for a regulated mental-health platform serving Medicare and Medicaid users.',
     problem: 'The legacy journey was too long, form-heavy, and cognitively demanding for high-vulnerability users, creating abandonment and support pressure.',
     research: 'Reviewed funnel drop-offs, patient-service feedback, HIPAA constraints, accessibility risks, form validation issues, and cognitive-load barriers in the enrollment journey.',
@@ -52,14 +38,7 @@ const caseStudies = [
     metrics: ['25% increase in enrollment conversion', 'Reduced abandonment in high-friction form steps', 'Improved accessibility compliance', 'Recognized with ET Healthcare product award']
   },
   {
-    category: 'transformation',
-    badge: 'Enterprise Workflow',
-    badgeClass: 'badge-blue',
-    client: 'PROVIDENCE / PS&D',
-    timeline: '2024',
-    title: 'Applicant Tracking System and Job Portal Modernization',
-    role: 'Principal UX Architect',
-    impact: '35% faster task completion',
+    category: 'transformation', badge: 'Enterprise Workflow', badgeClass: 'badge-blue', client: 'PROVIDENCE / PS&D', timeline: '2024', title: 'Applicant Tracking System and Job Portal Modernization', role: 'Principal UX Architect', impact: '35% faster task completion',
     summary: 'A recruiter operations redesign that simplified dense job creation, candidate review, filtering, and batch-action workflows.',
     problem: 'Recruiters were working through dense tables, hidden actions, repeated navigation, and slow job-posting paths that made daily work inefficient.',
     research: 'Observed recruiter task flows, mapped job-post creation steps, reviewed candidate-list usage, analyzed table-filter behavior, and identified repeated decision bottlenecks.',
@@ -71,14 +50,7 @@ const caseStudies = [
     metrics: ['35% faster job creation and assignment', 'Reduced navigation between recruiter tasks', '40% smaller perceived payload through lazy-loading design', 'Higher confidence in candidate-status visibility']
   },
   {
-    category: 'innovation',
-    badge: 'AI Workflow',
-    badgeClass: 'badge-purple',
-    client: 'PROVIDENCE LABS',
-    timeline: '2024 - 2025',
-    title: 'AI-Integrated Enterprise Design Workflows',
-    role: 'Lead AI-UX Strategist',
-    impact: '3x faster prototyping cycles',
+    category: 'innovation', badge: 'AI Workflow', badgeClass: 'badge-purple', client: 'PROVIDENCE LABS', timeline: '2024 - 2025', title: 'AI-Integrated Enterprise Design Workflows', role: 'Lead AI-UX Strategist', impact: '3x faster prototyping cycles',
     summary: 'A governed AI-assisted design workflow using Figma Make, Claude, Google Stitch, and design-system prompts to accelerate product discovery.',
     problem: 'Design teams were spending too much time creating repetitive wireframe variants, workshop artifacts, and first-pass specifications.',
     research: 'Studied designer pain points, PM workshop needs, repetitive design tasks, privacy constraints, prompt failure patterns, and design-system compliance gaps.',
@@ -90,14 +62,7 @@ const caseStudies = [
     metrics: ['3x faster first-pass prototyping', '20% shorter design lifecycle lead time', 'More consistent workshop outputs', 'Reduced repetitive specification effort']
   },
   {
-    category: 'systems',
-    badge: 'Accessibility',
-    badgeClass: 'badge-amber',
-    client: 'PROVIDENCE ENTERPRISE',
-    timeline: '2023 - 2024',
-    title: 'Accessibility Architecture at Scale',
-    role: 'Enterprise Accessibility Lead',
-    impact: 'WCAG 2.2 AA embedded into the system layer',
+    category: 'systems', badge: 'Accessibility', badgeClass: 'badge-amber', client: 'PROVIDENCE ENTERPRISE', timeline: '2023 - 2024', title: 'Accessibility Architecture at Scale', role: 'Enterprise Accessibility Lead', impact: 'WCAG 2.2 AA embedded into the system layer',
     summary: 'A program that moved accessibility from late-stage QA into reusable component, token, and governance decisions.',
     problem: 'Accessibility defects were being found too late, creating rework across color, focus, landmark, form, modal, and screen-reader behavior.',
     research: 'Audited accessibility defects, reviewed screen-reader flows, checked keyboard traps, evaluated color contrast, and analyzed component-level failure patterns.',
@@ -109,14 +74,7 @@ const caseStudies = [
     metrics: ['90% reduction in late accessibility defects', '100% AA target for new core surfaces', 'Lower regulatory risk', 'Reusable accessibility criteria for product teams']
   },
   {
-    category: 'research,behance',
-    badge: 'Research Methods',
-    badgeClass: 'badge-blue',
-    client: 'IIT BOMBAY EXECUTIVE',
-    timeline: '2021',
-    title: 'Design Thinking Research Framework',
-    role: 'UX Research Lead',
-    impact: 'Reusable discovery model for product teams',
+    category: 'research,behance', badge: 'Research Methods', badgeClass: 'badge-blue', client: 'IIT BOMBAY EXECUTIVE', timeline: '2021', title: 'Design Thinking Research Framework', role: 'UX Research Lead', impact: 'Reusable discovery model for product teams',
     summary: 'A structured design-thinking case study converting ambiguous business problems into validated user needs and product opportunities.',
     problem: 'Teams lacked a repeatable way to move from stakeholder assumptions to evidence-backed experience requirements.',
     research: 'Used stakeholder interviews, user empathy mapping, journey mapping, pain-point clustering, and heuristic review to expose opportunity areas.',
@@ -128,14 +86,7 @@ const caseStudies = [
     metrics: ['25% shorter discovery cycles', 'Clearer product requirements', 'Reusable research templates', '780+ Behance views and 25+ appreciations']
   },
   {
-    category: 'transformation,behance',
-    badge: 'Lead Funnel',
-    badgeClass: 'badge-teal',
-    client: 'GRAMENER TECH',
-    timeline: '2016',
-    title: 'Marketing Leads and Recruiter Funnel UX',
-    role: 'Lead Product Designer',
-    impact: '30% faster lead-processing workflow',
+    category: 'transformation,behance', badge: 'Lead Funnel', badgeClass: 'badge-teal', client: 'GRAMENER TECH', timeline: '2016', title: 'Marketing Leads and Recruiter Funnel UX', role: 'Lead Product Designer', impact: '30% faster lead-processing workflow',
     summary: 'A funnel and dashboard redesign that made lead capture, recruiter review, and follow-up actions easier to scan and complete.',
     problem: 'Lead forms were long, tables were hard to scan, validation was unclear, and mobile behavior created layout strain.',
     research: 'Reviewed lead conversion steps, recruiter table usage, form errors, search/filter behavior, and repeated support issues.',
@@ -147,14 +98,7 @@ const caseStudies = [
     metrics: ['30% faster recruiter lead processing', 'Reduced form confusion', 'Improved responsive behavior', 'Cleaner conversion funnel visibility']
   },
   {
-    category: 'transformation,behance',
-    badge: 'Industrial UX',
-    badgeClass: 'badge-blue',
-    client: 'WINWIRE / APPLIED MATERIALS',
-    timeline: '2018 - 2020',
-    title: 'Applied Materials Industrial Automation Dashboard',
-    role: 'Senior UX Architect / Tech Lead',
-    impact: '35% fewer diagnostic errors',
+    category: 'transformation,behance', badge: 'Industrial UX', badgeClass: 'badge-blue', client: 'WINWIRE / APPLIED MATERIALS', timeline: '2018 - 2020', title: 'Applied Materials Industrial Automation Dashboard', role: 'Senior UX Architect / Tech Lead', impact: '35% fewer diagnostic errors',
     summary: 'A complex industrial monitoring redesign for semiconductor chamber operations, telemetry alerts, and diagnostic workflows.',
     problem: 'Operators were monitoring high-density machine data across multiple chambers with unclear hierarchy and delayed anomaly recognition.',
     research: 'Studied operator workflows, alert response paths, telemetry density, diagnostic errors, and critical machine-state interpretation.',
@@ -166,14 +110,7 @@ const caseStudies = [
     metrics: ['35% reduction in diagnostic errors', 'Faster anomaly recognition', 'Unified responsive web portal', 'Executive Excellence Award recognition']
   },
   {
-    category: 'innovation,behance',
-    badge: 'AI OCR',
-    badgeClass: 'badge-purple',
-    client: 'WINWIRE / AUSTIN INDUSTRIES',
-    timeline: '2018',
-    title: 'Austin Industries OCR Verification Experience',
-    role: 'Lead Experience Designer',
-    impact: '50% faster invoice digitization',
+    category: 'innovation,behance', badge: 'AI OCR', badgeClass: 'badge-purple', client: 'WINWIRE / AUSTIN INDUSTRIES', timeline: '2018', title: 'Austin Industries OCR Verification Experience', role: 'Lead Experience Designer', impact: '50% faster invoice digitization',
     summary: 'An AI document-ingestion interface that helped construction teams review OCR results, confidence scores, and parsing errors quickly.',
     problem: 'Paper-based invoice and log processing created manual data-entry delays, review fatigue, and frequent cataloging errors.',
     research: 'Analyzed document processing steps, reviewer behavior, OCR uncertainty points, batch-upload expectations, and correction patterns.',
@@ -185,14 +122,7 @@ const caseStudies = [
     metrics: ['50% faster invoice digitization', 'Reduced manual entry errors', 'Clearer AI confidence visibility', 'Reusable Angular component patterns']
   },
   {
-    category: 'transformation,behance',
-    badge: 'Data Visualization',
-    badgeClass: 'badge-blue',
-    client: 'GRAMENER TECH / INDUSTRIAL',
-    timeline: '2016',
-    title: 'Big Data IoT Telemetry Dashboard',
-    role: 'Senior UX/UI Developer',
-    impact: '40% faster anomaly detection',
+    category: 'transformation,behance', badge: 'Data Visualization', badgeClass: 'badge-blue', client: 'GRAMENER TECH / INDUSTRIAL', timeline: '2016', title: 'Big Data IoT Telemetry Dashboard', role: 'Senior UX/UI Developer', impact: '40% faster anomaly detection',
     summary: 'A telemetry dashboard redesign that converted high-volume industrial sensor streams into a clean, actionable monitoring experience.',
     problem: 'Operators were overwhelmed by 50+ machine metrics, noisy charts, and slow visual parsing during anomaly investigation.',
     research: 'Reviewed sensor usage, chart latency, operator scanning behavior, metric prioritization, and anomaly escalation paths.',
@@ -204,14 +134,7 @@ const caseStudies = [
     metrics: ['40% faster anomaly detection', 'Render calls reduced under 100ms target', 'Reusable dashboard stylesheet', 'Clearer machine-state hierarchy']
   },
   {
-    category: 'innovation,behance',
-    badge: 'Startup SaaS',
-    badgeClass: 'badge-amber',
-    client: 'SYNC APPS VENTURES',
-    timeline: '2014 - 2016',
-    title: 'Innfly Mobile Hotel Builder and SaaS Platform',
-    role: 'Co-Founder and Lead Architect',
-    impact: 'Websites built in under 30 minutes',
+    category: 'innovation,behance', badge: 'Startup SaaS', badgeClass: 'badge-amber', client: 'SYNC APPS VENTURES', timeline: '2014 - 2016', title: 'Innfly Mobile Hotel Builder and SaaS Platform', role: 'Co-Founder and Lead Architect', impact: 'Websites built in under 30 minutes',
     summary: 'A mobile-first SaaS product that helped independent hotels create, configure, and publish booking-ready websites without technical skills.',
     problem: 'Small hotel operators lacked budget, technical confidence, and direct-booking infrastructure, making them dependent on aggregators.',
     research: 'Studied hotel owner needs, booking setup pain points, template expectations, mobile editing behavior, and room-inventory workflows.',
@@ -224,9 +147,6 @@ const caseStudies = [
   }
 ];
 
-/**
- * 1. Mobile Menu Toggle
- */
 function initMobileNav() {
   const toggle = document.querySelector('.mobile-nav-toggle');
   const menu = document.querySelector('.nav-menu');
@@ -313,9 +233,6 @@ function lifecycleBlock(title, copy) {
   `;
 }
 
-/**
- * 2. Dynamic Case Study Filtering (Supports Comma-Separated Multi-Categories)
- */
 function initCaseFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
@@ -365,9 +282,6 @@ function initCaseStudyExpansion() {
   });
 }
 
-/**
- * 3. Smooth Collapsible Accordions for legacy case study briefs
- */
 function initAccordions() {
   const accordHeaders = document.querySelectorAll('.accordion-header');
 
@@ -395,11 +309,21 @@ function initAccordions() {
   }
 }
 
-/**
- * 4. Premium Scroll Reveal Animations
- */
 function initScrollAnimations() {
-  const revealElements = document.querySelectorAll('section, .fact-card, .project-card');
+  const revealElements = document.querySelectorAll('section:not(#portfolio), .fact-card');
+  const portfolio = document.querySelector('#portfolio');
+
+  if (portfolio) {
+    portfolio.classList.add('revealed');
+    portfolio.style.opacity = '1';
+    portfolio.style.transform = 'none';
+  }
+
+  document.querySelectorAll('#portfolio .project-card').forEach(card => {
+    card.classList.add('revealed');
+    card.style.opacity = '1';
+    card.style.transform = 'none';
+  });
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -436,6 +360,12 @@ function injectCaseStudyStyles() {
       transform: translateY(0) !important;
     }
 
+    #portfolio,
+    #portfolio .project-card {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
     .ux-case-card {
       border-radius: 8px;
       padding: 0;
@@ -462,7 +392,6 @@ function injectCaseStudyStyles() {
       white-space: nowrap;
     }
 
-    .ux-case-card .project-card h3,
     .ux-case-card h3 {
       max-width: 920px;
       font-size: 30px;
